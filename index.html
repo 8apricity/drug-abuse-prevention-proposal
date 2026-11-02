@@ -47,6 +47,10 @@
       li { padding-left: .2em; margin: .7em 0; }
       blockquote { background: var(--wash); border-left: 3px solid var(--accent); margin: 1rem 0; padding: .8em 1.2em; }
       blockquote p { margin: 0; }
+      table { width: 100%; table-layout: fixed; border-collapse: collapse; margin: 1.5rem 0; font-size: .92rem; line-height: 1.85; }
+      th, td { padding: .75em .85em; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+      th { background: var(--wash); font-weight: 700; }
+      th:first-child, td:first-child { width: 35%; }
       nav[role="doc-toc"] { margin: 2.4rem 0 0; padding: 1.3rem 0; border-block: 1px solid var(--rule); }
       nav[role="doc-toc"] h2 { margin: 0 0 .8em; font-size: .95rem; font-family: inherit; }
       nav[role="doc-toc"] ol { display: grid; grid-template-columns: 1fr 1fr; gap: .25rem 1.3rem; list-style: none; margin: 0; padding: 0; }
@@ -64,6 +68,8 @@
         main { padding: 1.5rem 1.25rem 2.5rem; }
         h1 { font-size: clamp(1.6rem, 7vw, 2.25rem); }
         main > h2 { margin-top: 3rem; padding-top: 1.5rem; }
+        table { font-size: .9rem; }
+        th, td { padding: .65em .55em; }
         nav[role="doc-toc"] ol { grid-template-columns: 1fr; }
       }
       @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -134,7 +140,67 @@
         </div>
         <figcaption>図 1: 直後に測る候補と、その先の教育目標。矢印は想定する関係で、効果の実証結果ではない。すべての候補を一度に測る意味ではない。</figcaption>
       </figure>
-      <p>主要な一概念と必要な少数の補足項目を、選んだ案に合わせて決める。候補は使用意図、リスク認識、許容的態度、相談・支援の意図、社会的距離、非難、危険視、回復の認識、相談への不安、自己効力感などで、これらに限定しない。使用回避意思も補足候補である。有意差がないだけで一次予防の維持・非劣性は証明できない。<a id="loc-6" href="#loc-25" role="doc-biblioref">[8]</a></p>
+      <p>主要な一概念と必要な少数の補足項目を、選んだ案に合わせて決める。測定項目の候補と、その意味は次のとおりである。</p>
+      <table>
+        <thead>
+          <tr>
+            <th>測定項目の候補</th>
+            <th>意味</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>薬物使用意図</td>
+            <td>今後、違法薬物を使おうとする気持ちや、そのつもりの強さ。</td>
+          </tr>
+          <tr>
+            <td>使用のリスク認識</td>
+            <td>違法薬物の使用が心身や生活にもたらす害の大きさや、害が起こる可能性をどう捉えるか。</td>
+          </tr>
+          <tr>
+            <td>使用への許容的態度</td>
+            <td>違法薬物を使ってもかまわないと考える程度。使用する人の人格を尊重することとは分ける。</td>
+          </tr>
+          <tr>
+            <td>援助希求意図</td>
+            <td>自分が薬物の問題で困ったときに、他者や専門機関へ相談し、助けを求めようとする気持ち。</td>
+          </tr>
+          <tr>
+            <td>他者を支援につなげる意図</td>
+            <td>薬物の問題で困っている友人などに、相談先や専門機関の利用を勧め、支援につなごうとする気持ち。</td>
+          </tr>
+          <tr>
+            <td>スティグマ</td>
+            <td>薬物を使用する人や依存症の人に対する、否定的な決めつけや非難、差別的な見方。</td>
+          </tr>
+          <tr>
+            <td>社会的距離</td>
+            <td>薬物の問題を抱える人と、話したり同じ班で活動したりすることを避けたい程度。</td>
+          </tr>
+          <tr>
+            <td>回復可能性の認識</td>
+            <td>薬物依存症の人も、治療や支援を受けながら健康や生活を立て直せると考える程度。</td>
+          </tr>
+          <tr>
+            <td>相談・通報への不安</td>
+            <td>薬物の問題を相談することで、責められたり、相談内容が警察などに伝わったりすることを心配する程度。</td>
+          </tr>
+          <tr>
+            <td>薬物を断る自己効力感</td>
+            <td>薬物の使用を誘われたときに、自分なら断れるという自信。</td>
+          </tr>
+          <tr>
+            <td>相談行動の自己効力感</td>
+            <td>相談先へ連絡し、薬物の悩みを伝えるなどの行動を、自分ならできるという自信。</td>
+          </tr>
+          <tr>
+            <td>当事者への危険視</td>
+            <td>薬物を使用する人や依存症の人が、周囲の人に危害を加えそうだと見る程度。薬物自体の危険性とは分ける。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>スティグマには複数の側面があり、社会的距離や当事者への危険視など、何を測るかを区別する。これらに限定せず、直接の非難、友人支援の自己効力感、責任の抱え込み、予防と尊重の両立認識も候補になる。全項目を測る計画ではない。</p>
+      <p>使用回避意図も共通の補足候補である。薬物使用意図と、反対向きに尋ねる使用回避意図を同じ検証済み尺度とは扱わない。有意差がないだけで一次予防の維持・非劣性は証明できない。<a id="loc-6" href="#loc-25" role="doc-biblioref">[8]</a></p>
       <h2 id="options">3. 九つの調査案</h2>
       <p>番号は順位ではない。以下の質問例は独自の仮案で、主要項目・対照も未確定である。①の物語は研究用に作った架空の事例で、実在の証言ではない。</p>
       <p>①〜③は治療と支援を受け、現在は薬物を使わず学校に通うKさん、④〜⑥は医療機関で支援を受け普段学校に通う生徒を、架空の同年代の人物として示す。④〜⑥の現在の使用状態は明記しない。⑦〜⑨は自分や友人が大麻を使って困っているが緊急状態ではなく、示された窓口が相談を受けられると確認できた場合を想像してもらう。実際の経験は尋ねない。</p>
